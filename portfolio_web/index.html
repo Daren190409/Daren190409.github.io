@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .centered-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>BADIER Daren</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Stages</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/mW4UEAYzfhZb-Wl6/scene.splinecode"></spline-viewer>
+        <img src="Moi.jpg" alt="Photo de profil" class="centered-img">
+        <p>Je m'appelle Daren BADIER,</p><div><p>Je suis actuellement en Seconde au Lycée à Veyne en section informatique.</p></div>
+        
+    </section>
+
+    <section id="projects">
+        <h2>Stages</h2>
+        <div class="grid-container">
+            <div class="project">
+                <h2>Premier stage du 13 au 31 janvier 2025 au 4° Régiment de Chasseurs</h2>
+                <a href="https://www.sengager.fr/regiments/4e-regiment-de-chasseurs">Lien vers le 4° Régiment des Chasseurs</a> 
+                <img src="Insigne_régimentaire_du_4e_RCh.png" alt="Insigne du 4e RCh" class="centered-img">
+            </div>
+            <div class="project">
+                <h2>Second stage du 28 avril au 16 mai 2025 au Conseil Départemental</h2>
+                <a href="https://www.hautes-alpes.fr/elus">Lien vers le Conseil Départemental</a> 
+                <img src="Conseil-general.jpg" alt="Logo Conseil Départemental" class="centered-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="grid-container">
+            <div class="skill"><h2>HTML/CSS</h2></div>
+            <div class="skill"><h2>JAVASCRIPT</h2></div>
+            <div class="skill"><h2>BATCH</h2></div>
+            <div class="skill"><h2>BASH</h2></div>
+            <div class="skill"><h2>PHP/MYSQL</h2></div>
+            <div class="skill"><h2>Installer Linux (Mint, Ubuntu, Debian)</h2></div>
+            <div class="skill"><h2>Installer Windows</h2></div>
+            <div class="skill"><h2>Démontage et remontage de PC</h2></div>
+            <div class="skill"><h2>Python</h2></div>
+            <div class="skill"><h2>Visualisation 3D</h2></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+            <form action="send_mail.php" method="post">
+                <input type="text" name="name" placeholder="Votre Nom" required>
+                <input type="email" name="email" placeholder="Votre Mail" required>
+                <textarea name="message" placeholder="Votre Message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025</p>
+        <p>BADIER Daren</p>
+        <p>Email : <a href="mailto:badier.daren@lpmendesfrance.com">badier.daren@lpmendesfrance.com</a></p>
+        <p>Numéro : <a href="tel:+33767819573">07-67-81-95-73</a></p> 
+        <p>Qualités : Je suis attentif, sérieux, autonome, respectueux</p>
+    </footer>
+    <script src="./onload.js"></script>
+    <script src="./send_mail.php"></script>
+</body>
+</html>
